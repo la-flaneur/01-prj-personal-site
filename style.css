@@ -1,1 +1,119 @@
-/* Add you CSS here */
+/* Reset body margins and padding */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #B3D9F2; /* Less saturated Carolina blue background */
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #4B9CD3; /* Carolina blue background */
+  color: white; /* White text */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between logo, links, and search bar */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Padding for spacing */
+  position: sticky; /* Sticky positioning */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+  width: 100%; /* Make the navbar span the full width of the page */
+  margin: 0; /* Remove any default margin */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.navbar .logo {
+  font-size: 1.5em; /* Larger font for logo */
+  font-weight: bold; /* Bold text for logo */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+}
+
+.navbar .nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Display links in a row */
+  gap: 15px; /* Space between links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar .nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text */
+  font-size: 1em; /* Normal font size */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+}
+
+.navbar .search-bar {
+  display: flex; /* Display input and button in a row */
+  gap: 5px; /* Space between input and button */
+}
+
+.navbar .search-bar input {
+  padding: 5px; /* Padding inside the input */
+  border: 1px solid white; /* White border */
+  border-radius: 3px; /* Rounded corners */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+}
+
+.navbar .search-bar button {
+  padding: 5px 10px; /* Padding inside the button */
+  border: none; /* Remove border */
+  background-color: white; /* White background */
+  color: #4B9CD3; /* Carolina blue text */
+  border-radius: 3px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+}
+
+.navbar .search-bar button:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center; /* Center text and content */
+  padding: 50px 20px; /* Add spacing around the hero section */
+  background-image: url('hero-background.jpg'); /* Placeholder for background image */
+  background-attachment: fixed; /* Parallax effect */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  color: white; /* White text for contrast */
+}
+
+.hero img {
+  width: 150px; /* Set profile picture size */
+  height: 150px; /* Ensure it's a square */
+  border-radius: 50%; /* Make the image round */
+  border: 3px solid white; /* Add a white border */
+}
+
+.hero h1 {
+  font-size: 2em; /* Large heading */
+  color: #4B9CD3; /* Carolina blue text */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+}
+
+.hero p {
+  font-size: 1em; /* Normal paragraph size */
+  color: #333; /* Darker text for contrast */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+}
+
+/* Second section styles */
+.second-section {
+  background-color: white; /* White background */
+  padding: 50px 20px; /* Add spacing around the section */
+  text-align: center; /* Center text */
+}
+
+.second-section h2 {
+  font-size: 1.8em; /* Slightly smaller heading */
+  color: #4B9CD3; /* Carolina blue text */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+}
+
+.second-section p {
+  font-size: 1em; /* Normal paragraph size */
+  color: #333; /* Darker text for contrast */
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Bubbly font style */
+}
