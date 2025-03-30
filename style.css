@@ -197,3 +197,60 @@ body {
   font-family: Arial, Helvetica, sans-serif; /* Sans-serif font for skills text */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px 20px; /* Adjust padding */
+  }
+
+  .navbar .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 10px; /* Reduce gap between links */
+  }
+
+  .hero {
+    padding: 50px 10px; /* Reduce padding for smaller screens */
+  }
+
+  .hero img {
+    width: 200px; /* Reduce profile picture size */
+    height: 200px; /* Match width for circular shape */
+  }
+
+  .mission-content {
+    flex-direction: column; /* Stack mission content vertically */
+    gap: 15px; /* Adjust spacing */
+  }
+
+  .skills-list {
+    flex-wrap: wrap; /* Ensure skills wrap to the next line */
+    gap: 10px; /* Reduce gap between skill items */
+  }
+}
+
+/* Media query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 15px; /* Further reduce padding */
+  }
+
+  .hero h1 {
+    font-size: 1.5em; /* Reduce heading size */
+  }
+
+  .hero p {
+    font-size: 0.9em; /* Reduce paragraph size */
+  }
+
+  .mission-content img {
+    width: 250px; /* Reduce mission image size */
+  }
+
+  .skills-list span {
+    font-size: 0.9em; /* Reduce skill tag font size */
+    padding: 8px 15px; /* Adjust padding inside skill tags */
+  }
+}
